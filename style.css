@@ -6,11 +6,6 @@ body {
     padding: 50px;
 }
 
-.container {
-    max-width: 600px;
-    margin: auto;
-}
-
 /* Search Section */
 .search-section {
     margin-bottom: 30px;
@@ -59,10 +54,33 @@ body {
 .weather-card {
     background: rgba(255,255,255,0.2);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
+    margin-bottom: 20px;
 }
 
-/* Error Message */
+/* Forecast Section */
+.forecast-section {
+    margin-top: 30px;
+}
+
+.forecast-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+}
+
+.forecast-card {
+    background: rgba(255,255,255,0.2);
+    padding: 15px;
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+
+.forecast-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Error */
 .error-message {
     background: rgba(255, 0, 0, 0.2);
     padding: 20px;
