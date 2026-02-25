@@ -140,7 +140,6 @@ vite.config.ts.timestamp-*
 # Environment files
 .env
 .env.local
-config.js
 
 # Dependencies
 node_modules/
