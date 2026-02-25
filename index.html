@@ -7,8 +7,9 @@
 
 <body>
 
-    <h1>SkyFetch Weather Dashboard</h1>
+    <h1>🌤️ SkyFetch Weather Dashboard</h1>
 
+    <!-- Search Section -->
     <div class="search-section">
         <input 
             type="text" 
@@ -18,12 +19,22 @@
         <button id="search-btn">🔍 Search</button>
     </div>
 
+    <!-- Recent Searches -->
+    <div id="recent-searches-section" class="recent-searches-section">
+        <div class="recent-header">
+            <h4>Recent Searches</h4>
+            <button id="clear-history-btn" class="clear-history-btn">Clear</button>
+        </div>
+        <div id="recent-searches-container"></div>
+    </div>
+
+    <!-- Weather Display -->
     <div id="weather-container"></div>
 
     <!-- Axios CDN -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-    <!-- Your JS -->
+    <!-- App JS -->
     <script src="app.js"></script>
 
 </body>
